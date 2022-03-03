@@ -89,3 +89,17 @@ textarea:focus {
 .search > input:focus {
   outline: none;
 }
+
+.dark_mode {
+  background-color: rgb(29, 38, 43);
+  height: 100vh;
+}
+
+.dark_mode  h1 {
+  color: rgb(23, 255, 178);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
