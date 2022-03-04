@@ -1,16 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgb(20, 59, 43);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  color: #3a2b24;
+  font-family: "Prompt", sans-serif;
+  background-color: #EFDBD3;
 }
 
 .jr_container {
@@ -22,43 +15,46 @@ code {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  
+  margin-bottom: 50px;
 }
 textarea {
+  width: 100%;
   border: none;
-  resize: none;
-  background-color: aquamarine;
+  /* resize: none; */
+  background-color: #E69B6C;
 }
 
 .save {
   border: none;
   padding: 5px 10px;
-  background-color: brown;
+  background-color:#658985;
+  color: brown;
   color: white;
   border-radius: 5px;
 }
 .save:hover {
-  background-color: rgb(155, 43, 43);
+  background-color:#658985;
   cursor: pointer;
 }
 
 textarea:focus {
   border: none;
   outline: none;
+  font-family: "Prompt", sans-serif;
 }
 .note.new {
-  background-color: aquamarine;
+  background-color: #E69B6C;
 }
 
 .note {
-  background-color: rgb(185, 177, 255);
+  background-color: #BBBBBB;
   border-radius: 10px;
   padding: 1rem;
   min-height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .note_footer {
@@ -74,9 +70,9 @@ textarea:focus {
 .search {
   display: flex;
   align-items: center;
-  background-color: burlywood;
+  background-color: #E69B6C;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin: 20px 0;
 }
 
@@ -93,11 +89,11 @@ textarea:focus {
 
 .dark_mode {
   background-color: rgb(29, 38, 43);
-  height: 100vh;
+  padding-bottom: 20px;
 }
 
-.dark_mode  h1 {
-  color: rgb(23, 255, 178);
+.dark_mode h1 {
+  color: #EFDBD3;
 }
 .header {
   display: flex;
